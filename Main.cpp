@@ -117,6 +117,5 @@ int winGame(int dadu[], Nama anggota[], string pilihan[]) {
         }
     }
 
-    cout << menang;
     return menang;
 }
