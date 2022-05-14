@@ -11,6 +11,9 @@ void header();
 void table(Nama anggota[]);
 
 int main() {
+    float taruhan;
+    string pilihan[2];
+
     Nama anggota[6] = {
         {1, "Hantu"},
         {2, "Kebo"},
@@ -22,8 +25,17 @@ int main() {
 
     header();
 
-    cout << endl << "Pilihan:" << endl;
+    cout << endl;
     table(anggota);
+
+    cout << endl << "Taruhan: ";
+    cin >> taruhan;
+
+    for(int i = 0; i < 2; i++) {
+        cout << "Pasang " << i + 1 << " (masukan 0 jika tidak ingin menambahkan): ";
+        cin >> pilihan[i];
+    }
+
 
     return 0;
 }
