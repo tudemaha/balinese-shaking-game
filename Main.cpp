@@ -68,6 +68,8 @@ int main() {
         } else {
             currentBalance -= modal;
         }
+    } else if(jumlahMenang == 1) {
+        currentBalance += 0.5 * modal + modal;
     } else {
         currentBalance += jumlahMenang * modal + modal;
     }
